@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Click Button</title>
+</head>
+<body>
+    <!-- Button that will be clicked automatically -->
+    <button id="autoClickButton">Click me!</button>
+
+    <script>
+        // Function to open a new tab
+        function openNewTab() {
+            window.open("https://www.cpmrevenuegate.com/k6zvq6vkn?key=5806caade959f22765fcfc4fbf2f5c65", "_blank"); // Replace with any URL you want
+        }
+
+        // Function to simulate a button click every second
+        function autoClick() {
+            const button = document.getElementById('autoClickButton');
+            button.click();
+        }
+
+        // Add an event listener to the button to open a new tab when clicked
+        document.getElementById('autoClickButton').addEventListener('click', openNewTab);
+
+        // Set an interval to automatically click the button every second
+        setInterval(autoClick, 1000); // 1000ms = 1 second
+    </script>
+</body>
+</html>
